@@ -81,20 +81,21 @@ body {
 }
 
 .container {
-    width: 1158px;
-    /* width: 428px; */
+    /* width: 1158px;
+    max-width: 428px; */
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0 auto;
-    /*outline: 2px solid tomato;*/
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .section {
-    padding-top: 120px;
-    padding-bottom: 120px;
-    /* padding-top: 96px;
+    /* padding-top: 120px;
+    padding-bottom: 120px; */
+    padding-top: 96px;
        padding-bottom: 96px;
-       заготовка */
+       /* заготовка */
 }
 
 .visually-hidden {
@@ -273,22 +274,27 @@ body {
 }
 
 .strategy-list {
-    display: flex;
+    /* display: flex; */
 }
 
 .strategy-list-item {
-    width: calc((100% - 72px) / 4);
-    margin-right: 24px;
+    /* width: calc((100% - 72px) / 4); */
+    /* margin-right: 24px; */
 }
+
+.strategy-list-item:not(:last-child) {
+    margin-bottom: 72px;
+}
+
 .strategy-list-item:last-child {
-    margin-right: 0;
+    /* margin-right: 0; */
 }
 
 .strategy-list-bg {
-    /* display: none; */
-    display: flex;
+    display: none;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     height: 112px;
     background-color: var(--strategy-icon-bg, #F4F4FD);
     border-radius: 4px;
@@ -301,15 +307,21 @@ body {
 }
 
 .strategy-list-subtitle {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    /* font-weight: 500; */
+    /* font-size: 20px; */
+    /* line-height: 1.2; */
     letter-spacing: 0.02em;
+    text-transform: capitalize;
     color: var(--secondary-page-text, #2E2F42);
     margin-bottom: 8px;
 }
 
 .strategy-list-text {
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -318,7 +330,7 @@ body {
 
 /**-------------------------------WORK----------------------------*/
 .work {
-
+    display: none;
 }
 
 .work-title {
@@ -1086,4 +1098,85 @@ body {
     bottom: -1px;
     background-color: var(--bg-active-page, #404BBF);
     border-radius: 2px;
+}
+
+/***************MEDIA*********************************/
+@media screen and (min-width: 428px) {
+    .container {
+        width: 428px;
+    }
+
+    .strategy {
+        padding-bottom: 96px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+
+    
+    
+    .strategy-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+    }
+
+    .strategy-list-item {
+        width: calc((100% - 24px) / 2);
+        /* margin-right: 24px; */        
+    }
+
+    .strategy-list-item:not(:last-child) {
+        margin-bottom: 0px;
+    }
+
+    .strategy-list-subtitle {
+        text-align-last: left;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .container {
+        width: 1158px;
+    }
+
+    .section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .strategy {
+        padding-bottom: 0;
+    }
+
+    .strategy-list {
+        flex-wrap: nowrap;
+    }
+
+    .strategy-list-item {
+        width: calc((100% - 72px) / 4);
+    }
+
+    .strategy-list-bg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .strategy-list-subtitle {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .strategy-list-text {
+        font-weight: 400;
+    }
+
+    .work {
+        display: block;
+    }
 }
