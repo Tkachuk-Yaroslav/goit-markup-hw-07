@@ -54,6 +54,22 @@
     .team-list-item:not(:last-child) {
         margin-bottom: 0;
     }
+
+    .customers-list {
+        gap: 72px 24px;
+    }
+
+    .customers-list-item {
+        width: calc((100% - 48px) / 3);
+    }
+
+    .customer-list-link {
+        padding: 16px 32px;       
+    }
+
+    .customers-icon {
+        width: 104px;
+    }
 }
 
 /***************ДЛЯ ДЕСКТОПА*********************************/
@@ -116,11 +132,25 @@
     .team-list-item {
         width: calc((100% - 72px) / 4);       
     }
+
+    .customers-list {
+        flex-wrap: nowrap;
+        gap: 24px;
+    }
+
+    .customers-list-item {
+        width: calc((100% - 5 * 24px) / 6);
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
     .team .container {
         width: 582px;
-        outline: 1px solid red;
+        /* outline: 1px solid red; */
+    }
+
+    .customers .container {
+        width: 582px;
+        /* outline: 1px solid red; */
     }
 }
