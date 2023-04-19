@@ -70,6 +70,45 @@
     .customers-icon {
         width: 104px;
     }
+
+    .footer-flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+    }
+
+    .footer-part-one {
+        margin: 0;
+    }
+
+    .footer-part-two {
+        margin: 0;
+    }
+
+    .footer-logo {
+        text-align: left;
+    }
+
+    .footer-title {
+        text-align: left;
+    }
+
+    .footer-part-three {
+        margin: 0;
+    }
+
+    .footer-form {
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .footer-form-title {
+        text-align: left;
+    }
+
+    .footer-email {
+        margin: 0;
+    }
 }
 
 /***************ДЛЯ ДЕСКТОПА*********************************/
@@ -141,6 +180,28 @@
     .customers-list-item {
         width: calc((100% - 5 * 24px) / 6);
     }
+
+    .footer {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .footer-flex {
+        flex-wrap: nowrap;
+        gap: 0;
+    }
+
+    .footer-text {
+        max-width: 264px;
+    }
+
+    .footer-part-one {
+        margin-right: 120px;
+    }
+
+    .footer-part-two {
+        margin-right: 80px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
@@ -150,6 +211,11 @@
     }
 
     .customers .container {
+        width: 582px;
+        /* outline: 1px solid red; */
+    }
+
+    .footer .container {
         width: 582px;
         /* outline: 1px solid red; */
     }
