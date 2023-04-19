@@ -40,6 +40,20 @@
     .strategy-list-subtitle {
         text-align-last: left;
     }
+
+    .team-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 64px 24px;
+    }
+
+    .team-list-item {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .team-list-item:not(:last-child) {
+        margin-bottom: 0;
+    }
 }
 
 /***************ДЛЯ ДЕСКТОПА*********************************/
@@ -92,5 +106,21 @@
 
     .work {
         display: block;
+    }
+
+    .team-list {
+        flex-wrap: nowrap;
+        gap: 24px;
+    }
+
+    .team-list-item {
+        width: calc((100% - 72px) / 4);       
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+    .team .container {
+        width: 582px;
+        outline: 1px solid red;
     }
 }
