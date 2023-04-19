@@ -211,23 +211,28 @@ body {
     background-position: center;
     max-width: 1440px;
     margin: 0 auto;
-    padding-top: 188px;
-    padding-bottom: 188px;
+    padding-top: 112px;
+    padding-bottom: 112px;
+    /* padding-top: 188px;
+    padding-bottom: 188px; */
 }
 
 .hero-title {
     font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
+    font-size: 36px;
+    line-height: 1.11;
+    /* font-size: 56px; */
+    /* line-height: 1.07; */
     text-align: center;
     letter-spacing: 0.02em;    
     color: var(--main-title-color, #FFFFFF);
 
-    
-    margin-bottom: 48px;
+    margin-bottom: 72px;
+    /* margin-bottom: 48px; */
     margin-left: auto;
     margin-right: auto;
-    max-width: 496px;
+    max-width: 320px;
+    /* max-width: 496px; */
 }
 
 .hero-btn {
@@ -1100,83 +1105,3 @@ body {
     border-radius: 2px;
 }
 
-/***************MEDIA*********************************/
-@media screen and (min-width: 428px) {
-    .container {
-        width: 428px;
-    }
-
-    .strategy {
-        padding-bottom: 96px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .container {
-        width: 768px;
-    }
-
-    
-    
-    .strategy-list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 72px 24px;
-    }
-
-    .strategy-list-item {
-        width: calc((100% - 24px) / 2);
-        /* margin-right: 24px; */        
-    }
-
-    .strategy-list-item:not(:last-child) {
-        margin-bottom: 0px;
-    }
-
-    .strategy-list-subtitle {
-        text-align-last: left;
-    }
-}
-
-@media screen and (min-width: 1158px) {
-    .container {
-        width: 1158px;
-    }
-
-    .section {
-        padding-top: 120px;
-        padding-bottom: 120px;
-    }
-
-    .strategy {
-        padding-bottom: 0;
-    }
-
-    .strategy-list {
-        flex-wrap: nowrap;
-    }
-
-    .strategy-list-item {
-        width: calc((100% - 72px) / 4);
-    }
-
-    .strategy-list-bg {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .strategy-list-subtitle {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-    }
-
-    .strategy-list-text {
-        font-weight: 400;
-    }
-
-    .work {
-        display: block;
-    }
-}

@@ -1,0 +1,96 @@
+/***************MEDIA*********************************/
+@media screen and (min-width: 428px) {
+    .container {
+        width: 428px;
+    }
+
+    .strategy {
+        padding-bottom: 96px;
+    }
+}
+
+/***************ДЛЯ ПЛАНШЕТА*********************************/
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+
+     .hero-title {
+        font-size: 56px;
+        line-height: 1.07;
+        max-width: 496px;
+        margin-bottom: 36px;
+    }
+
+    .strategy-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+    }
+
+    .strategy-list-item {
+        width: calc((100% - 24px) / 2);
+        /* margin-right: 24px; */
+    }
+
+    .strategy-list-item:not(:last-child) {
+        margin-bottom: 0px;
+    }
+
+    .strategy-list-subtitle {
+        text-align-last: left;
+    }
+}
+
+/***************ДЛЯ ДЕСКТОПА*********************************/
+@media screen and (min-width: 1158px) {
+    .container {
+        width: 1158px;
+    }
+
+    .section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .hero {
+        padding-top: 188px;
+        padding-bottom: 188px;
+    }
+
+   .hero-title {
+        margin-bottom: 48px;
+   }
+
+    .strategy {
+        padding-bottom: 0;
+    }
+
+    .strategy-list {
+        flex-wrap: nowrap;
+    }
+
+    .strategy-list-item {
+        width: calc((100% - 72px) / 4);
+    }
+
+    .strategy-list-bg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .strategy-list-subtitle {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .strategy-list-text {
+        font-weight: 400;
+    }
+
+    .work {
+        display: block;
+    }
+}
