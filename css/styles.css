@@ -72,6 +72,10 @@ body {
     background-color: #ffffff;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 .link {
     text-decoration: none;
 }
@@ -111,6 +115,7 @@ body {
 
 /**-------------------------------HEADER----------------------------*/
 .header {
+    /* padding: 24px 16px; */
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
     0px 1px 1px rgba(46, 47, 66, 0.16), 
     0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -136,6 +141,8 @@ body {
     text-transform: uppercase;
     color: var(--first-logo-part, #4D5AE5);
     margin-right: 76px;
+    display: inline-block;
+    padding: 24px 16px;
 }
 
 .part-of-logo {
@@ -143,8 +150,9 @@ body {
 }
 
 .header-list {
-    display: flex;
-    gap: 40px;
+    /* display: flex;
+    gap: 40px; */
+    display: none;
 }
 
 .header-list-item {
@@ -174,8 +182,9 @@ body {
 }
 
 .address-list {
-    display: flex;
-    gap: 40px;
+    /* display: flex;
+    gap: 40px; */
+    display: none;
 }
 
 .address-list-item {
@@ -200,6 +209,144 @@ body {
 .address-list-link:focus {
     color: var(--address-hover, #404BBF);
 }
+
+/*******************МОБІЛЬНЕ МЕНЮ****************************/
+.mob-menu-open {
+    display: inline-block;
+    height: 22px;
+    width: 32px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.open-menu-icon {
+    stroke: #2E2F42;
+}
+
+.mob-menu {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    width: 100vw;
+    height: 100vh;
+    padding: 24px 24px 40px 40px;
+}
+
+.mob-menu-close {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid #E7E9FC;
+    margin-left: auto;
+    cursor: pointer;
+    margin-bottom: 32px;
+    
+}
+
+.mob-menu-list {}
+
+.mob-menu-item {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+
+.mob-menu-item:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.mob-menu-link {
+    color: #2E2F42;
+}
+
+.active-mob-page {
+    color: var(--btn-bg-in-hover, #404BBF);
+}
+
+.header-mob-address {
+    font-style: normal;
+    margin-bottom: 48px;
+}
+
+.address-mob-list {}
+
+.address-mob-item {}
+
+.address-mob-item:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.address-mob-link {
+    
+}
+
+.phone {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: #4D5AE5;
+}
+
+.mail {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.mob-soc-list {
+    display: flex;
+    justify-content: start;
+    gap: 56px;
+}
+
+
+.mob-soc-item {
+    width: 40px;
+    height: 40px;
+}
+
+.mob-soc-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--team-soc-bg, #4D5AE5);
+    color: var(--second-soc-icon-color, #F4F4FD);
+    transition-duration: 250ms;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-soc-icon {
+    fill: currentColor;
+}
+
+
+
+
+
+
+
+
+
+
 
 /**-------------------------------HERO----------------------------*/
 

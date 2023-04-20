@@ -15,6 +15,33 @@
         width: 768px;
     }
 
+    .header-container {
+        gap: 120px;
+    }
+
+    .header-list {
+        display: flex;
+        gap: 40px;
+    }
+
+    .header-logo {
+        padding: 0;
+    }
+
+    .address-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .address-list-link {
+        padding: 0;
+    }
+
+    .mob-menu-open,
+    .mob-menu {
+        display: none;
+    }
+
      .hero-title {
         font-size: 56px;
         line-height: 1.07;
@@ -115,6 +142,11 @@
 @media screen and (min-width: 1158px) {
     .container {
         width: 1158px;
+    }
+
+    .address-list {
+        flex-wrap: nowrap;
+        gap: 40px;
     }
 
     .section {
