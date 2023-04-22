@@ -70,7 +70,7 @@
     }
 
     .address-list-link {
-        padding: 0;
+        /* padding: 0; */
     }
 
     .mob-menu-open,
@@ -191,6 +191,13 @@
         gap: 40px;
     }
 
+    .address-list-link {
+        font-size: 16px;
+        line-height: 1.5;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
     .section {
         padding-top: 120px;
         padding-bottom: 120px;
@@ -292,5 +299,38 @@
     .footer .container {
         width: 582px;
         /* outline: 1px solid red; */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-part-three {
+        width: 100%;
+    }
+
+    .footer-form {
+        width: 100%;
+    }
+
+    .footer-email {
+        max-width: 396px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .modal {
+        width: 310px;
+    }
+
+    .modal-title {
+        font-size: 12px;
+    }
+
+    .modal-textarea {
+        width: unset;
+    }
+
+    .last-modal-label {
+        font-size: 9px;
     }
 }

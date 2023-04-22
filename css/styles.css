@@ -193,12 +193,16 @@ body {
 
 .address-list-link {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;    
+    font-size: 12px;
+    /* font-size: 16px; */
+    line-height: 1.17;
+    /* line-height: 1.5; */    
     letter-spacing: 0.02em;
     color: var(--address-color, #434455);
-    padding-bottom: 24px;
-    padding-top: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    /* padding-bottom: 24px;
+    padding-top: 24px; */
     display: block;
     transition-duration: 250ms;
     transition-property: color;
@@ -214,7 +218,6 @@ body {
 .mob-menu-open {
     display: inline-block;
     height: 22px;
-    width: 32px;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -234,11 +237,13 @@ body {
     background-color: #FFFFFF;
     width: 100vw;
     height: 100vh;
-    padding: 24px 24px 40px 40px;
+    padding: 80px 24px 40px 40px;
 }
 
 .mob-menu-close {
-    display: inline-block;
+    position: absolute;
+    top: 24px;
+    right: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -256,9 +261,9 @@ body {
 .mob-menu-list {}
 
 .mob-menu-item {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
     letter-spacing: 0.02em;
     color: #2E2F42;
 }
@@ -358,6 +363,7 @@ body {
      rgba(46, 47, 66, 0.7)), url(../images/hero-img-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     max-width: 1440px;
     margin: 0 auto;
     padding-top: 112px;
